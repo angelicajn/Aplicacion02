@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/img2.jpg','imagenes/semana.jpg','imagenes/img5.jpg','imagenes/semanasanta7.jpg','imagenes/santa.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Semana Santa</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+            <div>
+           
+           <div>
+           <img src="imagenes/descarga.jpg" width="50%" height="50%"></div>
+          </div>
+          </div>
+          
+          
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Significado de Semana Santa</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Domingo De Pascua</h2>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Como Se Establece La Semana Santa</h2>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Celebración En Atixco</h2>
+         </a>
+         </li> 
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Celebración En Iztapalapa</h2>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Celebración En Vaticano</h2>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Celebración En Jerusalen</h2>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Celebración En Brasil</h2>
+         </a>
+         </li>
+       </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+       <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>Aplicacion dos</h4>
+      <h4>Angelica Jimenez Nieto</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Signficado De Semana Santa</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <div>
+        <p>La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret. Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección.</p> 
+         <center><img src="imagenes/imagen.jpg"></center>
+         
+         <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>Da clic para más información</h1>
+        <h3>Jueves Santo</h3>
+El Jueves Santo celebra la última cena de Jesús de Nazaret con sus discípulos, la institución de la eucaristía, la orden sacerdotal y, el lavatorio de pies. En este día, los católicos realizan la visita de los siete templos o iglesias, con el objetivo de agradecer a Dios el don de la eucaristía y sacerdocio.
+          <center><img src="imagenes/descarga3.jpg" width="50%" height="50%"></center>
+        <h3>Viernes Santo</h3>
+El Viernes Santo, recuerda la Pasión de Cristo, momento de su crucifixión en el Calvario, por salvar al hombre del pecado y darle vida entera. Se celebra con un viacrucis y con la adoración de la Cruz.
+        <center><img src="imagenes/viernes santo.jpg" width="50%" height="50%"></center> 
+       <h3>Sabado Santo</h3>
+Sábado Santo el día entre la muerte y la resurrección de Jesús. En este día, se lleva a cabo una vigilia pascual, en la cual se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús.
+        <center><img src="imagenes/descarga (3).jpg" width="50%" height="50%"></center>
+      <h3>Domingo Santo</h3>
+El Domingo Santo, conocido como Domingo de Pascua. En el Domingo Santo, se conmemora la resurrección de Jesucristo al tercer día después de su crucifixión y, su primera aparición a los discípulos. Este día es de suma alegría para los fieles y, es interpretado como la esperanza de una nueva vida.
+        <center><img src="imagenes/domingo.jpg" width="50%" height="50%"></center>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="a">
+        <h4>Jimenez Nieto Angelica</h4>
+        </div>
+     </div>
+     </div>  
+     
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Domingo De Pascua</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+      <div>
+        <p>La Pascua también llamada Pascua Florida, Domingo de Pascua,Domingo de Resurrección o Domingo de Gloria es la fiesta central del cristianismo, en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.
+
+La Pascua marca el final de la Semana Santa, en la que se conmemora la crucifixión y muerte de Jesús. A la Semana Santa le sigue un período de cincuenta días llamado Tiempo pascual, que termina con el Domingo de Pentecostés.</p>
+        <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>Da clic para poder visualizar la imagen</h1>
+     <center><img src="imagenes/pascua2016.jpg" height="250" width="500"></center>
+     </div>
+     </div>
+     </div>
+      </div>
+      </div>
+      <div data-role="footer" data-theme="a">
+      <h4>Jimenez Nieto Angelica</h4>
+      </div>
+     </div>
+</div> 
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Como Se Establece La Semana Santa</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>Le fecha de la celebración es variable, siempre entre marzo y abril, ya que depende del calendario lunar.
+Esto se debe a que el pueblo judío celebraba la fiesta de pascua en recuerdo de la liberación de la esclavitud de Egipto el día de la primera luna llena de primavera. Esta fecha la fijaban en base al año lunar y no al año solar de nuestro calendario moderno. Es por esto, que cada año la Semana Santa cambia de día, pues se hace siempre coincidir con la luna llena.</p>
+ <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>Da clic para más información</h1>
+
+La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión, donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección de la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección.
+</div>
+</div>
+    </div>
+    </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Jimenez Nieto Angelica</h4>
+    </div>
+   </div>
+</div>   
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Celebracion De Atixco</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/img2.jpg',1)"><img src="imagenes/descarga.jpg" width="275" height="183" id="Image20"></a>
+  <p>Esta es la capílla de San Jeronimo en la colonia Caleras</p>
+
+<div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+        <h1>clic para visualizar mas imagenes</h1>
+        
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/semana.jpg',1)"><img src="imagenes/descarga.jpg" width="275" height="183" id="Image21"></a> 
+ <p>Asi se celebro Viernes Santo en el municipio de Atlixco</p>
+ 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/img5.jpg',1)"><img src="imagenes/descarga.jpg" width="275" height="183" id="Image22"></a> 
+ <p>Se celebró Sabado Santo iniciando con la misa tradicional</p>
+  
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/semanasanta7.jpg',1)"><img src="imagenes/descarga.jpg" width="275" height="183" id="Image23"></a>
+ <p>Representacion de la muerte de jesus</p>
+ 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/santa.jpg',1)"><img src="imagenes/descarga.jpg" width="275" height="183" id="Image24"></a> 
+ <p>via crucis en el Municipio de Atlixco</p>
+ </div>
+ </div>      
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Jimenez Nieto Angelica</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Celebracion En Iztapalapa</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Celebracion de semana santa en Iztapalapa</h3>
+<p>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización</p>
+  <center><img src="imagenes/des.jpg" height="183" width="276"></center>
+  <p>EI comité organizador también tiene que ver con los escenarios y la coordinación de los movimientos de los personajes en los diferentes lugares donde hay representaciones. Así mismo, concerta con las autoridades de la Delegación la suspensión deI tráfico a determinadas horas en los días señalados, las calles por donde pasarán las procesiones, la seguridad de las multitudes que se concentran en las calles, las plazas y los jardines (donde además se establecen los puestos de comida, de antojitos, de diversiones, los juegos mecánicos, todo lo que conforma la feria.</p>
+   <center><img src="imagenes/izta.jpg" height="183" width="276"></center>
+   <p>
+   Los episodios más importantes tienen lugar el Domingo de Ramos con la Procesión y la Bendición de las Palmas; el Jueves Santo en el Jardín Cuitláhuac, y el Viernes Santo con la secuencia de la sentencia, los azotes, la coronación de espinas y el Vía Crucis que culmnina en el Cerro de la Estrella con la crucifixión.
+   </p>
+ <center><img src="imagenes/semana-santa-iztapalapa.jpg" height="183" width="276"></center>
+ 
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Jimenez Nieto Angelica</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Celebracion En Vaticano</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Celebracion de semana santa en el Vaicano</h2>
+<p>
+El papa argentino presidirá el domingo 24 a las 9.30 (hora local, 5.30 hora argentina) la tradicional celebración del domingo de ramos, con la que se inicia la Semana Santa, el tiempo litúrgico más importante para los católicos.
+
+Ese día se conmemora cuando Jesús entró triunfalmente en Jerusalén, aclamado como un rey por la gente con ramas y palmas de olivos que cortó de los árboles que se encontraban al lado del camino.</p>
+<img src="imagenes/vaticano.jpg">
+<p>
+El Papa Francisco oficia la Misa Crismal de Jueves Santo en la Basílica de San Pedro. En la ceremonia participarán cientos de sacerdotes de la diócesis de Roma.
+
+La retransmisión comienza a las 09:30, hora de Roma.
+<img src="imagenes/misa.jpg">
+</p>
+<p>
+Vía Crucis en el Coliseo es el acontecimiento más importante de la Semana Santa italiana, se trata del Vía Crucis a lo largo de Roma, en la tarde y noche del Viernes Santo. Este Vía Crucis tiene lugar en uno de los escenarios más evocadores y únicos que sólo la Ciudad Eterna es capaz de ofrecer y viene celebrado personal y públicamente por el Papa durante el recorrido que desde el Coliseo hasta el Templo de Venus.
+<img src="imagenes/coliseo.jpg">
+</p>
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Jimenez Nieto Angelica</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Celebracion En Jerusalen</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Como no podía ser de otro modo, el Monte de los Olivos -ubicado en el valle de Kidrón, al este de Jerusalén- reúne a peregrinos de los cinco continentes durante el Domingo de Ramos.
+
+Según describe el sitio LocuraViajes.com, estas personas ponen todo su fervor y oraciones en un camino que los lleva desde la iglesia de Betfagé (donde supuestamente se encuentra la roca en la que se apoyó Jesús para subirse a su asno), hasta la misma entrada en Jerusalén, en lo que es la representación del camino que hizo siglos atrás el propio Cristo hasta entrar triunfalmente a la ciudad.
+Luego se dirigen a la Iglesia de Santa Ana en Getsemaní, o ingresan a la ciudad a través de las murallas por la Puerta de San Esteban
+<img src="imagenes/jeru.jpg" height="264" width="550">
+<img src="imagenes/Jerusalem.jpg" height="264" width="550">
+</p>
+<p>
+Jueves santo
+Los momentos más emotivos y llamativos se dan el Jueves Santo, día en que los cristianos recuerdan la Última Cena de Cristo, en la que instauró el sacramento de la Eucaristía y tras la cual fue traicionado por Judas.
+Ese día se celebra una misa en el Santo Sepulcro, una iglesia que comparten los católicos, ortodoxos y armenios. Allí se realiza el lavatorio de pies, tal y como hizo Jesús con sus apóstoles.
+<img src="imagenes/iglesia.jpg">
+<br>
+El Viernes Santo por la mañana todos los grupos que se han dado cita en Israel hacen una peregrinación en Vía Crucis por las callejas empedradas de la capital, siguiendo el camino que lleva hasta el monte Gólgota (Calavera), y haciendo las estaciones penitenciales que recuerdan los distintos momentos del camino a la cruz, incluyendo las caídas.
+<img src="imagenes/via.jpg">
+</p>
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Jimenez Nieto Angelica</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Celebracion En Brasil</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>
+Río de Janeiro, 25 mar (EFE).- Comenzaron hoy las conmemoraciones de la Semana Santa en Brasil, marcadas por las representaciones litúrgicas y las procesiones que anualmente congregan a miles de fieles a lo largo de todo el país.
+</p>
+<img src="imagenes/brzil.jpg">
+<p>
+Una de las tradiciones típicas es 'la farra de Judas', realizada en la madrugada del viernes. Ese día, un muñeco representando a Judas es golpeado y destruido por la concurrencia, castigándolo por su traición a Jesús. Actualmente, los fieles suelen asociar la imagen del muñeco a algún mal político.
+</p>
+<img src="imagenes/judas2.jpg">
+<p>
+Otra conocida tradición de la Semana Santa es la de los espectáculos teatrales que representan el sufrimiento de los últimos días de la vida de Jesús
+</p>
+<img src="imagenes/jesus.jpg">
+
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Jimenez Nieto Angelica</h4>
+</div>
+</div>
+</div>
+                                                 
+</body>
+</html>
