@@ -9,9 +9,9 @@
 	
 	<name>Aplicacion dosSEMANASANTA</name>
 	
-	<descripcion>
+	<description>
 	Aplicacion que muestra la celebracion de semana santa
-	</descripcion>
+	</description>
 	
 	<preference name="phonegap-version" value="3.1.0"/>
 	
